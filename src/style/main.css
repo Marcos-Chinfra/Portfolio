@@ -1,0 +1,95 @@
+:root{
+    --principal-color: #9C640C;
+    --second-color: #C8E6C9;
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --bg-color-1: hsl(28, 74%, 33%);
+    --bg-color-2: #F8F0E8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif; 
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    padding: 0 20px;
+    background-color: var(--bg-color-2);
+}
+.navBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar_alias{
+    font-size: 2rem;
+    color: var(--principal-color);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.navBar_items{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    max-width: 420px;
+
+}
+.navBar_items a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+}
+.navBar_items a:hover{
+    color: var(--principal-color)
+}
+
+.whoIam{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.whoIam_description{
+    text-align: center;
+    width: 400px ;
+    margin-bottom: 50px;
+}
+.whoIam_description h2{
+    font-size: 2.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.whoIam_description h1{
+    font-size: 3.4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.whoIam_description p{
+    font-size: 1.6rem;
+}
+.whoIam_image{
+    background-color: var(--second-color);
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.whoIam_image img{
+    position: absolute;
+    top: -38%;
+    left: 10%;
+    width: 300px;
+    height: 380px;
+    background: transparent;
+}
+
+
