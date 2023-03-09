@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,12 +24,11 @@
                 <a href="#contact"><li>Contact</li></a>
             </ul>
             <div class="navBar_darkMode">
-                <span>
-                    <embed src="./asset/icons/crescent-moon_icon-icons.com_70215.svg" type="image/svg+xml" width="20" height="20">
-                </span>
-                <span>
-                    <embed src="./asset/icons/sun-day-weather-symbol_icon-icons.com_73146.svg" type="image/svg+xml" width="20" height="20">
-                </span>
+                <div >
+                    <img src="./asset/icons/crescent-moon_icon-icons.com_70215.svg" class="dark_mode" type="image/svg+xml" width="20" height="20">
+                
+                    <img src="./asset/icons/sun-day-weather-symbol_icon-icons.com_73146.svg" class="light_mode inactive" type="image/svg+xml" width="20" height="20">
+                </div>
             </div>
         </nav>
     </header>
@@ -94,59 +93,46 @@
             <h2 class="title_main">Proyectos</h2>
             <div class="projects_container">
                 <article class="projects_container--item">
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
+                    <img src="./asset/images/portfolio.png"/>
                     <h3>
                         Portafolio
                     </h3>
                     <p>
-    
+                        Mi portafolio, este es el Proyecto que mas me enorgullese y que mas me gusta, esta hecho con unicamente con HTML, CSS y JavaScript
                     </p>
-                    <a>
+                    <a href="https://github.com/Marcos-Chinfra/Portfolio" target="_blank"> 
                         Ir al repositorio
                     </a>
                 </article>
     
                 <article class="projects_container--item" >
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
+                    <img src="./asset/images/landing-page.png"/>
                     <h3>
                         Landing page "El granjerito"
                     </h3>
                     <p>
                         Landing pagen para la empresa de lacteos "El granjerito", donde se utilizar react para ayudar a la empreza a organizar los pedidos y los envios del producto.
                     </p>
-                    <a>
+                    <a href="https://github.com/Marcos-Chinfra/Landing-Page-" target="_blank"> 
                         Ir al repositorio
                     </a>
                 </article>
     
                 <article class="projects_container--item" >
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
+                    <img src="./asset/images/form-payment.png"/>
                     <h3>
-                        Panel de control
+                        Formulario de pago
                     </h3>
                     <p>
-    
+                        Formulario de una compra con animaciones para la tarjeta con la se pagara, hecho con React.js 
                     </p>
-                    <a>
+                    <a href="https://github.com/Marcos-Chinfra/payment-form" target="_blank">
                         Ir al repositorio
                     </a>
                 </article>
     
                 <article class="projects_container--item" >
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
-                    <h3>
-                        
-                    </h3>
-                    <p>
-    
-                    </p>
-                    <a>
-                        Ir al repositorio
-                    </a>
-                </article>
-    
-                <article class="projects_container--item" >
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
+                    <img src="./asset/images/portfolio.png"/>
                     <h3>
                         
                     </h3>
@@ -159,7 +145,20 @@
                 </article>
     
                 <article class="projects_container--item" >
-                    <img src="./asset/images/Captura de pantalla (485).png"/>
+                    <img src="./asset/images/portfolio.png"/>
+                    <h3>
+                        
+                    </h3>
+                    <p>
+    
+                    </p>
+                    <a>
+                        Ir al repositorio
+                    </a>
+                </article>
+    
+                <article class="projects_container--item" >
+                    <img src="./asset/images/portfolio.png"/>
                     <h3>
                         
                     </h3>
@@ -175,7 +174,7 @@
     </main>
     <footer id="contact">
         <section class="contact">
-            <a href="www.linkedin.com/in/marcos-chinchilla-195050171" target="_blank">
+            <a href="https://linkedin.com/in/marcos-chinchilla" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><path fill="currentColor" d="M100 80a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm128-36v168a16 16 0 0 1-16 16H44a16 16 0 0 1-16-16V44a16 16 0 0 1 16-16h168a16 16 0 0 1 16 16Zm-16 168V44H44v168ZM88 104a8 8 0 0 0-8 8v64a8 8 0 0 0 16 0v-64a8 8 0 0 0-8-8Zm60 0a36 36 0 0 0-20.2 6.2A8 8 0 0 0 112 112v64a8 8 0 0 0 16 0v-36a20 20 0 0 1 40 0v36a8 8 0 0 0 16 0v-36a36 36 0 0 0-36-36Z"/></svg>
                 <span>Linkedin</span>
             </a>
@@ -194,5 +193,6 @@
         </section>
         <p>Created with ❤️ by MSCH13</p>
     </footer>
+<script src="./src/index.js"></script>
 </body>
 </html>

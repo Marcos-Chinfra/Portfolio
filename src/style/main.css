@@ -1,12 +1,22 @@
 :root{
     --principal-color: #9C640C;
-    /* --second-color: #C8E6C9; */
     --second-color: #B6D9E0; 
     --light-color: #ffffff;
     --dark-color: #000000;
     --bg-color-1: rgb(146, 80, 22);
     --bg-color-2: #F8F0E8;
 }
+[data-theme="dark"] {
+    /* Dark Mode */
+    --principal-color: #F5DEB3;
+    --second-color: rgb(146, 80, 22);
+    --light-color: #000000;
+    --dark-color: #ffffff;
+    --bg-color-1: #B6D9E0;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +26,10 @@ html{
     font-size: 62.5%;
     font-family: 'Raleway', sans-serif; 
     scroll-behavior: smooth;
+}
+body{
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 /* HEADER */
@@ -53,6 +67,9 @@ header{
 }
 .navBar_items a:hover{
     color: var(--second-color)
+}
+.inactive{
+    display: none;
 }
 
 
@@ -210,8 +227,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--light-color);
     gap: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 4px 1px var(--principal-color); 
     margin-bottom: 25px;
 }
 .projects_container--item img{
@@ -231,6 +249,7 @@ main{
     height: 25px;
     padding: 5px;
     border: none;
+    text-decoration: none;
     background-color: var(--principal-color);
     color: var(--light-color);
     border-radius: 5px;
