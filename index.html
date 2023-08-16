@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,300;0,500;1,900&display=swap" rel="stylesheet">
-    
+    <script src="https://kit.fontawesome.com/0bc853992b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="./src/style/main.css">
     <title>MSCH13.JS</title>
@@ -28,9 +28,12 @@
             </ul>
             <div class="navBar_darkMode">
                 <div >
-                    <img src="./asset/icons/crescent-moon_icon-icons.com_70215.svg" class="dark_mode" type="image/svg+xml" width="20" height="20">
+                    <i class="fa-solid fa-moon dark_mode" style="color: #9CC76A; font-size: 25px; cursor: pointer;"></i>
+
+                    <i class="fa-solid fa-sun light_mode inactive" style="color: #579B0F; font-size: 25px; cursor: pointer;"></i>
+                    <!-- <img src="./asset/icons/crescent-moon_icon-icons.com_70215.svg" class="dark_mode" type="image/svg+xml" width="20" height="20">
                 
-                    <img src="./asset/icons/sun-day-weather-symbol_icon-icons.com_73146.svg" class="light_mode inactive" type="image/svg+xml" width="20" height="20">
+                    <img src="./asset/icons/sun-day-weather-symbol_icon-icons.com_73146.svg" class="light_mode inactive" type="image/svg+xml" width="20" height="20"> -->
                 </div>
             </div>
         </nav>
@@ -42,7 +45,7 @@
             <div class="whoIam_description">
                 <h2 class="whoIam_description-greeting">Hola mundo!! Soy</h2>
                 <h1 >Marcos Chinchilla</h1>
-                <p class="whoIam_description-job">Desarrollador web Frontend</p>
+                <p class="whoIam_description-job">Desarrollador web Fullstack</p>
                 <a href="./asset/Marcos_Chinchilla.pdf" download>Descargar mi currículum</a>
             </div>
             <div class="whoIam_image">
@@ -83,11 +86,26 @@
                     <span id="Sass" title="Sass" >
                         <i class="devicon-sass-original"></i>         
                     </span>
+                    <span id="TailwindCSS" title="TailwindCSS">
+                        <i class="devicon-tailwindcss-plain"></i>
+                    </span>
                     <span id="Webpack" title="Webpack">
                         <i class="devicon-webpack-plain"></i>
                     </span>
                     <span id="React.js" title="React.js">
                         <i class="devicon-react-original"></i>          
+                    </span>
+                    <span id="Node.js" title="Node.js">
+                        <i class="fa-brands fa-node"></i>
+                    </span>
+                    <span id="Sequelize" title="Sequelize">
+                        <i class="devicon-sequelize-plain"></i>
+                    </span>
+                    <span id="Express" title="Express">
+                        <i class="devicon-express-original"></i>
+                    </span>
+                    <span id="postgreSQL" title="postgreSQL">
+                        <i class="devicon-postgresql-plain"></i>
                     </span>
                 </div>
             </article>
@@ -134,6 +152,32 @@
                     </a>
                 </article>
     
+                <article class="projects_container--item" >
+                    <img src="./asset/images/inventario-granjerito.png"/>
+                    <h3>
+                        Plataforma Integral de Gestión de Inventario y Ventas
+                    </h3>
+                    <p>
+                        En esta emocionante creación, he unido mis habilidades tanto en desarrollo backend como frontend para diseñar y construir una solución robusta que revoluciona la forma en que las empresas manejan sus operaciones.
+                    </p>
+                    <a href="https://github.com/Marcos-Chinfra/lacteos-Granjerito" target="_blank">
+                        Ir al repositorio
+                    </a>
+                </article>
+    
+                <article class="projects_container--item" >
+                    <img src="./asset/images/form-step.png"/>
+                    <h3>
+                        Formulario Interactivo de Suscripción Paso a Paso
+                    </h3>
+                    <p>
+                        En este innovador proyecto de desarrollo frontend, he creado una experiencia de usuario excepcionalmente intuitiva y atractiva, inspirada en los enfoques utilizados por gigantes como Netflix, Amazon y Xbox.
+                    </p>
+                    <a href="https://github.com/Marcos-Chinfra/multi-step-form" target="_blank">
+                        Ir al repositorio
+                    </a>
+                </article>
+    
                 <!-- <article class="projects_container--item" >
                     <img src="./asset/images/portfolio.png"/>
                     <h3>
@@ -142,36 +186,10 @@
                     <p>
     
                     </p>
-                    <a>
+                    <a target="_blank">
                         Ir al repositorio
                     </a>
-                </article>
-    
-                <article class="projects_container--item" >
-                    <img src="./asset/images/portfolio.png"/>
-                    <h3>
-                        
-                    </h3>
-                    <p>
-    
-                    </p>
-                    <a>
-                        Ir al repositorio
-                    </a>
-                </article>
-    
-                <article class="projects_container--item" >
-                    <img src="./asset/images/portfolio.png"/>
-                    <h3>
-                        
-                    </h3>
-                    <p>
-    
-                    </p>
-                    <a>
-                        Ir al repositorio
-                    </a>
-                </article> -->
+                </article>  -->
             </div>
         </section>
     </main>
