@@ -1,10 +1,8 @@
-const sun = document.querySelector(".light_mode")
-const moon = document.querySelector(".dark_mode")
+const changeMode = document.querySelector(".navBar_darkMode ")
 const hamburger = document.querySelector(".menuMobile")
 const menu = document.querySelector(".navBar_items")
 
 const anchors = menu.children
-
 
 hamburger.addEventListener("click", () =>{
     menu.classList.toggle("inactive")
@@ -35,32 +33,22 @@ const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-s
 
 if(prefersDarkMode){
     document.documentElement.setAttribute("data-theme", "dark");
-    moon.classList.add("inactive")
-    sun.classList.remove("inactive")
+    changeMode.classList.add("active")
 }else{
     document.documentElement.setAttribute("data-theme", "light");
-    sun.classList.add("inactive")
-    moon.classList.remove("inactive")
+    changeMode.classList.remove("active")
 }
 
 
-function toggleToDark(e){
-    if (!e.target.className.includes("inactive")) {
+function handleMode(){
+    if (!changeMode.className.includes("active")) {
         document.documentElement.setAttribute("data-theme", "dark");
-    } 
-    moon.classList.add("inactive")
-    sun.classList.remove("inactive")
-}
-function toggleToLight(e){
-    if (!e.target.className.includes("inactive")) {
+        changeMode.classList.toggle("active");
+    }else{
         document.documentElement.setAttribute("data-theme", "light");
-    } 
-    sun.classList.add("inactive")
-    moon.classList.remove("inactive")
+        changeMode.classList.toggle("active");
+    }
 }
 
 
-
-
-sun.addEventListener("click", toggleToLight)
-moon.addEventListener("click", toggleToDark)
+changeMode.addEventListener("click", handleMode)
