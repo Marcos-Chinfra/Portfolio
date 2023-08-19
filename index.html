@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/asset/images/MSCH_Logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,300;0,500;1,900&display=swap" rel="stylesheet">
@@ -16,7 +17,10 @@
     <!-- HEADER -->
     <header>
         <nav class="navBar">
-            <h3 class="navBar_alias">MSCH13</h3>
+            <article class="navBar_brand">
+                <img src="/asset/images/MSCH_Logo.png" alt="">
+                <h3 class="navBar_alias">MSCH13</h3>
+            </article>
             <span class="menuMobile">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
             </span>
@@ -26,28 +30,34 @@
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#contact"><li>Contact</li></a>
             </ul>
-            <div class="navBar_darkMode">
-                <div >
-                    <i class="fa-solid fa-moon dark_mode" style="color: #9CC76A; font-size: 25px; cursor: pointer;"></i>
+            <button class="navBar_darkMode">
+                <span>
+                    <i class="fa-solid fa-sun light_mode" style="color: rgb(255, 236, 201); font-size: 20px; cursor: pointer;"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-moon dark_mode" style="color: #b6b7b4; font-size: 20px; cursor: pointer;"></i>
+                </span>
 
-                    <i class="fa-solid fa-sun light_mode inactive" style="color: #579B0F; font-size: 25px; cursor: pointer;"></i>
-                </div>
-            </div>
+            </button>
         </nav>
     </header>
     <!-- BODY OF THE PAGE -->
     <main>
         <!-- HOME -->
         <section id="home" class="whoIam">
-            <div class="whoIam_description">
-                <h2 class="whoIam_description-greeting">Hola mundo!! Soy</h2>
-                <h1 >Marcos Chinchilla</h1>
-                <p class="whoIam_description-job">Desarrollador web Fullstack</p>
+            <article class="whoIam_description">
+                <div>
+                    <h2 class="whoIam_description-greeting">Hola mundo!! Soy</h2>
+                    <h1 >Marcos Chinchilla</h1>
+                    <h4 class="whoIam_description-job">Desarrollador web Fullstack</h4>
+                </div>
                 <a href="./asset/Marcos_Chinchilla_FS.pdf" download>Descargar mi currículum</a>
-            </div>
-            <div class="whoIam_image">
-                <img src="./asset/images/msch.png"/>
-            </div>
+            </article>
+            <article class="whoIam_image">
+                <figure>
+                    <img src="./asset/images/Logo de MSCH13.svg"/>
+                </figure>
+            </article>
             
         </section>
 
