@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio made with html and css",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos-Chinfra/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcos-Chinfra/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Marcos-Chinfra/Portfolio#readme",
+  "devDependencies": {
+    "astro": "^7.1.0"
+  }
+}

@@ -1,0 +1,51 @@
+---
+// Projects component
+const projects = [
+  {
+    title: "Portafolio",
+    description: "Mi portafolio, este es el Proyecto que mas me enorgullese y que mas me gusta, esta hecho con unicamente con HTML, CSS y JavaScript",
+    image: "/asset/images/portfolio.png",
+    link: "https://github.com/Marcos-Chinfra/Portfolio"
+  },
+  {
+    title: 'Landing page "El granjerito"',
+    description: "Landing page para la empresa de lacteos 'El granjerito', donde se utilizo react para ayudar a la empresa a organizar los pedidos y los envios del producto.",
+    image: "/asset/images/landing-page.png",
+    link: "https://github.com/Marcos-Chinfra/Landing-Page-"
+  },
+  {
+    title: "Formulario de pago",
+    description: "Formulario de una compra con animaciones para la tarjeta con la que se pagara, hecho con React.js",
+    image: "/asset/images/form-payment.png",
+    link: "https://github.com/Marcos-Chinfra/payment-form"
+  },
+  {
+    title: "Plataforma Integral de Gestión de Inventario y Ventas",
+    description: "En esta emocionante creación, he unido mis habilidades tanto en desarrollo backend como frontend para diseñar y construir una solución robusta que revoluciona la forma en que las empresas manejan sus operaciones.",
+    image: "/asset/images/inventario-granjerito.png",
+    link: "https://github.com/Marcos-Chinfra/lacteos-Granjerito"
+  },
+  {
+    title: "Formulario Interactivo de Suscripción Paso a Paso",
+    description: "En este innovador proyecto de desarrollo frontend, he creado una experiencia de usuario excepcionalmente intuitiva y atractiva, inspirada en los enfoques utilizados por gigantes como Netflix, Amazon y Xbox.",
+    image: "/asset/images/form-step.png",
+    link: "https://github.com/Marcos-Chinfra/multi-step-form"
+  }
+];
+---
+
+<section id="projects" class="projects">
+  <h2 class="title_main">Proyectos</h2>
+  <div class="projects_container">
+    {projects.map(project => (
+      <article class="projects_container--item">
+        <img src={project.image} alt={project.title} />
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+        <a href={project.link} target="_blank">
+          Ir al repositorio
+        </a>
+      </article>
+    ))}
+  </div>
+</section>
