@@ -6,7 +6,7 @@
     "companyUrl": "",
     "period": "2023 – Presente",
     "industry": "Experiencia freelance",
-    "industryImage": "",
+    "industryImage": "lucide:terminal",
     "summary": "Mi propia marca personal y experiencia en desarrollo de software.",
     "skills": [
       "JavaScript",
@@ -36,7 +36,7 @@
     "companyUrl": "https://www.miscorpsa.com/",
     "period": "01/2022 – 03/2024",
     "industry": "Consultoría & Desarrollo a Medida",
-    "industryImage": "/images/industries/custom-software.svg",
+    "industryImage": "lucide:globe",
     "summary": "Optimizacion de procesos de negocio y mejora en la visibilidad de la marca.",
     "skills": [
       "PHP",
@@ -64,7 +64,7 @@
     "companyUrl": "https://www.hackmetrix.com/",
     "period": "01/2022 – 07/2024",
     "industry": "Ciberseguridad",
-    "industryImage": "/images/industries/custom-software.svg",
+    "industryImage": "lucide:shield-check",
     "summary": "Colaboracion en el desarrollo del modulo core de la aplicación para los clientes de Hackmetrix.",
     "skills": [
       "TypeScript",
@@ -94,7 +94,7 @@
     "companyUrl": "https://www.home.com.gt/",
     "period": "11/2024 – Presente",
     "industry": "Consultoría & Desarrollo a Medida",
-    "industryImage": "/images/industries/custom-software.svg",
+    "industryImage": "lucide:code-2",
     "summary": "Construición de software personalizado para clientes de HomeGT. Junto con seguimiento de las necesidades de los clientes.",
     "skills": [
       "C#",
