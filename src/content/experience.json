@@ -1,0 +1,123 @@
+[
+  {
+    "order": 1,
+    "role": "Full-Stack Software Developer",
+    "company": "Chillchilla",
+    "companyUrl": "",
+    "period": "2023 – Presente",
+    "industry": "Experiencia freelance",
+    "industryImage": "",
+    "summary": "Mi propia marca personal y experiencia en desarrollo de software.",
+    "skills": [
+      "JavaScript",
+      "React",
+      "PostgreSQL",
+      "Node.js",
+      "Docker",
+      "Tailwind CSS",
+      "Astro"
+    ],
+    "details": {
+      "overview": "Contruí soluciones de alta calidad y escalables para diferentes clientes y necesidades. Particiando en diseño de sistemas y arquitecturas.",
+      "keyChallenges": [
+        "Implementacion y analisis de la logica de negocio segun los requerimientos de los clientes.",
+        "Tiempos de entrega de alto rendimiento y escalabilidad."
+      ],
+      "impact": [
+        "Manufactura y optimizacion de procesos de negocios. Pasar de horas de trabajo a minutos gracias a la automaticación de procesos.",
+        "Mayor visibilidad de la marca en el mercado y mejora de la reputacion de la empresa."
+      ]
+    }
+  },
+  {
+    "order": 2,
+    "role": "Full-Stack Software Developer",
+    "company": "Miscorp",
+    "companyUrl": "https://www.miscorpsa.com/",
+    "period": "01/2022 – 03/2024",
+    "industry": "Consultoría & Desarrollo a Medida",
+    "industryImage": "/images/industries/custom-software.svg",
+    "summary": "Optimizacion de procesos de negocio y mejora en la visibilidad de la marca.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Blade",
+      "HTML",
+      "CSS"
+    ],
+    "details": {
+      "overview": "Optimice el envio de emails para los usuarios de la plataforma, mejorando la experiencia de usuario y la conversión de clientes.",
+      "keyChallenges": [
+        "Optimizacion de procesos y mejora en la visibilidad de la marca evitando problemas segun navegadores y dispositivos.",
+        "Mejora en la conversion de clientes y mejora en la reputacion de la marca."
+      ],
+      "impact": [
+        "Mejor experiencia de usuario y conversión de clientes."
+      ]
+    }
+  },
+  {
+    "order": 3,
+    "role": "Full-Stack Software Trainee",
+    "company": "Hackmetrix",
+    "companyUrl": "https://www.hackmetrix.com/",
+    "period": "01/2022 – 07/2024",
+    "industry": "Ciberseguridad",
+    "industryImage": "/images/industries/custom-software.svg",
+    "summary": "Colaboracion en el desarrollo del modulo core de la aplicación para los clientes de Hackmetrix.",
+    "skills": [
+      "TypeScript",
+      "Vue.js",
+      "PostgreSQL",
+      "Docker",
+      "NestJS",
+      "Jest",
+      "Cypress",
+      "Tailwind CSS"
+    ],
+    "details": {
+      "overview": "Colabore con un equipo de desarrolladores para lanzar un nuevo modulo core de la aplicación mientras se solucionaban problemas reportandos en la aplicación.",
+      "keyChallenges": [
+        "Nuevo modulo core de la aplicación.",
+        "90% de cobertura de tests con Jest."
+      ],
+      "impact": [
+        "Mejora en la velociddad de resolución de tickets"
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "role": "Full-Stack Developer",
+    "company": "HomeGT",
+    "companyUrl": "https://www.home.com.gt/",
+    "period": "11/2024 – Presente",
+    "industry": "Consultoría & Desarrollo a Medida",
+    "industryImage": "/images/industries/custom-software.svg",
+    "summary": "Construición de software personalizado para clientes de HomeGT. Junto con seguimiento de las necesidades de los clientes.",
+    "skills": [
+      "C#",
+      ".NET",
+      "SQL Server",
+      "Blazor",
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "PostgreSQL"
+    ],
+    "details": {
+      "overview": "Participación activa en el ciclo de vida de múltiples proyectos empresariales, desarrollo de software personalizado con soluciones agiles y de calidad.",
+      "keyChallenges": [
+        "Implementación de soluciones mediante procesos almacenados para mejorar el rendimiento de las peticiones.",
+        "Conexion con diferentes plataformas de negocios y integración con sistemas externos.",
+        "Construccion de un ecosistema empresarial con diferentes plataformas de negocios."
+      ],
+      "impact": [
+        "Solicitudes de clientes con mejores resultados a gran escala.",
+        "Mejora en el flujo de trabajo de los clientes mediante soluciones adecuadas para cada caso",
+        "Cumplimiento de los requerimientos de los clientes con mejores resultados a gran escala."
+      ]
+    }
+  }
+]
