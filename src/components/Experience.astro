@@ -1,0 +1,83 @@
+---
+import experienceData from '../content/experience.json';
+
+const experiences = [...experienceData].sort((a, b) => a.order - b.order);
+---
+
+<section id="experience" class="experience">
+  <h2 class="title_main">Experiencia</h2>
+  <div class="experience_timeline">
+    {experiences.map((item, index) => {
+      const side = index % 2 === 0 ? 'left' : 'right';
+      return (
+        <article class={`experience_item experience_item--${side}`} data-order={item.order}>
+          <div class="experience_item--marker" aria-hidden="true"></div>
+          <div class="experience_card">
+            <header class="experience_card--header">
+              <span class="experience_card--period">{item.period}</span>
+              <span class="experience_card--industry">{item.industry}</span>
+            </header>
+            <h3 class="experience_card--role">{item.role}</h3>
+            <p class="experience_card--company">
+              {item.companyUrl ? (
+                <a href={item.companyUrl} target="_blank" rel="noopener noreferrer">
+                  {item.company}
+                </a>
+              ) : (
+                <span>{item.company}</span>
+              )}
+            </p>
+            <p class="experience_card--summary">{item.summary}</p>
+            <ul class="experience_card--skills">
+              {item.skills.map((skill) => (
+                <li>{skill}</li>
+              ))}
+            </ul>
+            <button
+              type="button"
+              class="experience_card--toggle"
+              aria-expanded="false"
+              data-toggle-details
+            >
+              Ver detalles
+            </button>
+            <div class="experience_card--details" hidden>
+              <div class="experience_card--details-inner">
+                <h4>Resumen</h4>
+                <p>{item.details.overview}</p>
+                <h4>Retos clave</h4>
+                <ul>
+                  {item.details.keyChallenges.map((challenge) => (
+                    <li>{challenge}</li>
+                  ))}
+                </ul>
+                <h4>Impacto</h4>
+                <ul>
+                  {item.details.impact.map((impact) => (
+                    <li>{impact}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-toggle-details]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.experience_card');
+      const details = card?.querySelector<HTMLElement>('.experience_card--details');
+      if (!details) return;
+
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!isOpen));
+      button.textContent = isOpen ? 'Ver detalles' : 'Ocultar detalles';
+      details.hidden = isOpen;
+      card?.classList.toggle('is-open', !isOpen);
+    });
+  });
+</script>
