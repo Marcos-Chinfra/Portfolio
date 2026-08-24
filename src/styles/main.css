@@ -440,6 +440,7 @@ main {
 
 .experience_card--industry {
 	font-size: 1.3rem;
+  font-weight: 500;
 	opacity: 0.85;
   padding-left: 5px;
 	color: var(--light-color);
