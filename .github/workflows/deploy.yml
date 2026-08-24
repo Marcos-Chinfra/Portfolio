@@ -1,19 +1,33 @@
-name: Build and Deploy
-on: 
+name: Deploy Astro site to GitHub Pages
+
+on:
   push:
-      branches:
-          - main
+    branches: [main] # Cambia a 'master' si esa es tu rama principal
+  workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - name: Checkout tu repositorio
+        uses: actions/checkout@v4
+      - name: Instalar, construir y subir tu sitio
+        uses: withastro/action@v3
+        # with:
+          # path: . # Descomenta y ajusta esta línea si tu proyecto Astro está dentro de una subcarpeta
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
