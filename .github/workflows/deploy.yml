@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Instalar, construir y subir tu sitio
         uses: withastro/action@v3
+        with:
+          node-version: 22
         # with:
           # path: . # Descomenta y ajusta esta línea si tu proyecto Astro está dentro de una subcarpeta
 
